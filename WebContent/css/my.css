@@ -1,0 +1,12 @@
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #000;
+    font-size: 16px;
+    padding: 0 20px;
+    font-weight: bold;
+}
+@media (max-width: 576px) {
+    .navbar-dark .navbar-nav .nav-link{
+        color: brown;
+    }
+}
