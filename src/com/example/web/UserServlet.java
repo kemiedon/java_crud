@@ -55,6 +55,9 @@ public class UserServlet extends HttpServlet {
 			case "/user/update":
 				updateUser(request, response);//顯示表單畫面
 				break;
+			case "/user/delete":
+                deleteUser(request, response);
+                break;
 			default:
 				listUser(request, response);
 				break;
@@ -120,5 +123,10 @@ public class UserServlet extends HttpServlet {
         userDAO.updateUser(editUser);
         response.sendRedirect("list");
         
+	}
+	private void deleteUser(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
+		int id = Integer.parseInt(request.getParameter("id"));
+		userDAO.deleteUser(id);
+        response.sendRedirect("list");
 	}
 }
