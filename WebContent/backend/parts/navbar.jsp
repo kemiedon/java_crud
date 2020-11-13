@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container"> <a class="navbar-brand" href="#">
         <i class="fa d-inline fa-lg fa-stop-circle"></i>
@@ -18,6 +19,8 @@
             <li class="nav-item"> <a class="nav-link" href="<%=request.getContextPath()%>/list">使用者管理</a> </li>
             <li class="nav-item"> <a class="nav-link" href="<%=request.getContextPath()%>/news">最新消息管理</a> </li>
             <li class="nav-item"> <a class="nav-link" href="<%=request.getContextPath()%>/products">產品管理</a> </li>
+            <li class="nav-item mx-2 mt-1"><span style="color:#fff;"><c:out value="${sessionScope.admin }"/> </span></li>
+          	<li class="nav-item"><a class="nav-link btn btn-primary btn-sm" href="<%=request.getContextPath()%>/logout?msg=success">登出</a> </li>
           </ul>
         </div>
     </div>

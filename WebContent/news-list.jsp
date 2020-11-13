@@ -47,30 +47,14 @@
       <div class="row">
         <div class="col-lg-10 col-md-10 p-3 mx-auto">
           <ul class="list-group">
+          <c:forEach var="news" items="${listNews}" varStatus="loop">
             <li class="list-group-item">
               <div class="row">
-                <div class="col-12 col-sm-3">2020-10-29</div>
-                <div class="col-12 col-sm-9"><a href="">萬聖節派對蛋糕製作課程</a></div>
+                <div class="col-12 col-sm-3"><c:out value="${news.published_at}"/></div>
+                <div class="col-12 col-sm-9"><a href="news-page?id=<c:out value="${news.id}"/>"><c:out value="${news.title}"/></a></div>
               </div>
             </li>
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-12 col-sm-3">2020-10-15</div>
-                <div class="col-12 col-sm-9"><a href="">杯子蛋糕DIY活動</a></div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-12 col-sm-3">2020-10-05</div>
-                <div class="col-12 col-sm-9"><a href="">新品上市-法式馬卡龍</a></div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-12 col-sm-3">2020-09-29</div>
-                <div class="col-12 col-sm-9"><a href="">新品上市-彩虹蛋糕</a></div>
-              </div>
-            </li>
+           </c:forEach> 
           </ul>
         </div>
       </div>

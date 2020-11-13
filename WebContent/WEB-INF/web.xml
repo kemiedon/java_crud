@@ -9,7 +9,15 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  
+  	<servlet>
+        <servlet-name>AdminServlet</servlet-name>
+        <servlet-class>com.example.web.AdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
     <servlet>
         <servlet-name>UserServlet</servlet-name>
         <servlet-class>com.example.web.UserServlet</servlet-class>
@@ -23,6 +31,21 @@
         <url-pattern>/user/update</url-pattern>
         <url-pattern>/user/delete</url-pattern>
     </servlet-mapping>
+    <servlet>
+    <servlet-name>NewsServlet</servlet-name>
+    <servlet-class>com.example.web.NewsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewsServlet</servlet-name>
+    <url-pattern>/news/list</url-pattern>
+    <url-pattern>/news/new</url-pattern>
+    <url-pattern>/news/edit</url-pattern>
+    <url-pattern>/news/delete</url-pattern>
+    <url-pattern>/news/insert</url-pattern>
+    <url-pattern>/news/update</url-pattern>
+    <url-pattern>/news-list</url-pattern>
+    <url-pattern>/news-page</url-pattern>
+  </servlet-mapping>
      <locale-encoding-mapping-list>
         <locale-encoding-mapping>
             <locale>zh_TW</locale>

@@ -44,7 +44,7 @@
           <ul class="breadcrumb">
             <li class="breadcrumb-item"> <a href="#">首頁</a> </li>
             <li class="breadcrumb-item"><a href="news-list.html">最新消息</a></li>
-            <li class="breadcrumb-item active">萬聖節diy活動</li>
+            <li class="breadcrumb-item active"><c:out value="${one_news.title}"/></li>
           </ul>
         </div>
       </div>
@@ -52,14 +52,14 @@
         <div class="col-md-8 mx-auto">
           <div class="row">
             <div class="col-lg-9 col-md-6 p-3">
-              <h4 class="">萬聖節diy活動</h4>
+              <h4 class=""><c:out value="${one_news.title}"/></h4>
             </div>
             <div class="col-lg-3 col-md-6 p-3">
-              <h5 class="text-right">2020-10-20</h5>
+              <h5 class="text-right"><c:out value="${one_news.published_at}"/></h5>
             </div>
           </div>
           <div class="col-md-12 mx-auto">
-            <p class="">過完國慶日，再來31日就要迎接萬聖節到來，碰巧「藍月」奇景也在當日降臨，增添西洋鬼節神祕氛圍。《ETtoday新聞雲》特搜4處萬聖節活動，包含萬聖南瓜城、南瓜鬼屋、鬼怪列車、飄飄幽靈隧道，當天還有女巫祕密集市和親子變裝討糖吃，免費活動陪大家同樂，去年錯過的你，今年趕緊筆記下來！ ▲向陽農場2020南瓜鬼屋。（圖／向陽農場提供） ▲向陽農場2020南瓜鬼屋。（圖／向陽農場提供） 1.桃園觀音萬聖南瓜節 結合南瓜意象和西洋鬼節，「桃園觀音萬聖南瓜節」從即日起至11月1日登場。今年同樣以蓮花園休閒農業區為中心，除了往年都有的林家古厝休閒農場、向陽農場、蓮荷園之外，今年更有以「大王蓮乘坐」聞名的康莊蓮園和長美農場加入南瓜節行列。 向陽農場的南瓜主題鬼屋今年依舊保留，場主黃永林表示，鬼屋今年多了可怕的中國殭屍，共分為殭屍來襲、紅衣小女孩、萬聖夜總會、猛鬼派對、燈影精靈和夢幻南瓜等六區，一樣保留可愛的南瓜鬼，讓旅客闖關後還會會心一笑，挑戰自身和友人膽量。 觀音區公所表示，今年同樣有南瓜隧道及相關主題佈置。另外，萬聖節專屬的南瓜大馬車，24、25日停在蓮荷園休閒農場，讓民眾玩好拍滿。 2020桃園觀音萬聖南瓜節 日期：10月17日至11月1日 地址：桃園市觀音區蓮花園休閒農業區及週邊 原文網址: 北部「4處萬聖節活動」免費玩！桃園南瓜隧道、萬聖城堡有光雕 | ETtoday旅遊雲 | ETtoday新聞雲 https://travel.ettoday.net/article/1834265.htm#ixzz6cEnTZKgN Follow us: @ETtodaynet on Twitter | ETtoday on Facebook</p>
+            <c:out value="${one_news.content}" escapeXml="false"/>
           </div>
         </div>
       </div>

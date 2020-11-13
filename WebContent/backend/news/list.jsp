@@ -49,7 +49,7 @@
               <tbody>
               <c:forEach var="news" items="${listNews}" varStatus="loop">
                 <tr>
-                  <td><c:out value="${loop.index+1}"/></td>
+                  <td><c:out value="${news.published_at}"/></td>
                   <td><c:out value="${news.title}"/></td>
                   <td style=""><a class="btn btn-link p-0" href="">編輯</a>&nbsp;&nbsp;&nbsp;
                     <a class="btn btn-link p-0" onclick="return confirm('確定刪除此筆資料?刪除後無法回復')" href="">刪除</a></td>

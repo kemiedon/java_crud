@@ -2,5 +2,6 @@ eclipse.preferences.version=1
 encoding//WebContent/backend/parts/navbar.jsp=UTF-8
 encoding//WebContent/backend/users/list2.jsp=UTF-8
 encoding//src/com/example/dao/UserDAO.java=UTF-8
+encoding//src/com/example/web/AdminServlet.java=UTF-8
 encoding//src/com/example/web/UserServlet.java=UTF-8
 encoding/<project>=ISO-8859-1
